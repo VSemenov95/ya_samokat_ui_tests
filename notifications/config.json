@@ -1,0 +1,17 @@
+{
+  "base": {
+    "logo": "",
+    "project": "test",
+    "environment": "some env",
+    "comment": "some comment @SemenovVS",
+    "reportLink": "view/java_students/job/VSemenov_demoQA_39_jenkins_notification/1/allure/",
+    "language": "en",
+    "allureFolder": "build/report",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "7506081509:AAGOzWqNK1Ew7C_pL_OFP0I4SwEVkqbu-_E",
+    "chat": "-5172519962",
+    "replyTo": ""
+  }
+}
