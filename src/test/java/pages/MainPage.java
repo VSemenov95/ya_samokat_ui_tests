@@ -10,6 +10,10 @@ public class MainPage {
 
     public void openOrdersButton(SelenideElement value) {
         open("");
+        executeJavaScript("""
+document.getElementById('fixedban')?.remove();
+document.querySelector('footer')?.remove();
+""");
         $(value).scrollIntoView(true);
         value.click();
     }
