@@ -11,7 +11,7 @@
 * <a href="#jira">Интеграция с Jira</a>
 * <a href="#telegram">Уведомление в Telegram при помощи бота</a>
 * <a href="#video">Примеры видео выполнения тестов на Selenoid</a>
-<a id="description"></a>
+  <a id="description"></a>
 
 ## Описание:
 
@@ -41,9 +41,9 @@
 <a href="https://selenide.org/"><img src="media/logo/Selenide.svg" width="50" height="50"  alt="Selenide"/></a>  
 <a href="https://aerokube.com/selenoid/"><img src="media/logo/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>  
 <a href="ht[images](images)tps://github.com/allure-framework/allure2"><img src="media/logo/Allure_Report.svg" width="50" height="50"  alt="Allure"/></a> 
-<a href="https://qameta.io/"><img src="media/logo/Allure_Test_Ops.svg" width="50" height="50"  alt="Allure TestOps"/></a>   
+<a href="https://qameta.io/"><img src="media/logo/AllureTestops.svg" width="50" height="50"  alt="Allure TestOps"/></a>   
 <a href="https://www.jenkins.io/"><img src="media/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>  
-<a href="https://www.atlassian.com/ru/software/jira/"><img src="media/logo/jira.svg" width="50" height="50"  alt="Jira"/></a>
+<a href="https://www.atlassian.com/ru/software/jira/"><img src="media/logo/JiraIcon.svg" width="50" height="50"  alt="Jira"/></a>
 <a href="https://telegram.org/"><img src="media/logo/Telegram.svg" width="50" height="50"  alt="Telegram"/></a>  
 </p>
 
@@ -82,7 +82,7 @@ clean test
 ```
 ___
 <a id="allure"></a>
-## <img alt="Allure" height="25" src="media/screen/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure [Allure-отчет](https://jenkins.autotests.cloud/view/java_students/job/VSemenov_qa-scooter_39/allure/)</a>
+## <img alt="Allure" height="25" src="media/logo/Allure_Report.svg" width="25"/></a> <a name="Allure"></a>Allure [Allure-отчет](https://jenkins.autotests.cloud/view/java_students/job/VSemenov_qa-scooter_39/allure/)</a>
 ___
 
 ### *Тест-кейсы*
@@ -93,7 +93,7 @@ ___
 
 ___
 <a id="allure-testops"></a>
-## <img alt="Allure" height="25" src="media/logo/Allure_Test_Ops.svg" width="25"/></a>Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/5151/dashboards">Allure TestOps</a>
+## <img alt="Allure" height="25" src="media/logo/AllureTestops.svg" width="25"/></a>Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/5151/dashboards">Allure TestOps</a>
 ____
 ### *Allure TestOps Dashboard*
 
@@ -109,7 +109,7 @@ ____
 
 ___
 <a id="jira"></a>
-## <img alt="Allure" height="25" src="media/logo/jira.svg" width="25"/></a> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1590">Jira</a>
+## <img alt="Jira" height="25" src="media/logo/JiraIcon.svg" width="25"/></a> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1590">Jira</a>
 ____
 <p align="center">  
 <img title="Jira" src="media/screen/Jira_integration.png" width="850">  
@@ -117,7 +117,7 @@ ____
 
 ____
 <a id="telegram"></a>
-## <img alt="Allure" height="25" src="media/logo/Telegram.svg" width="25"/></a> Уведомление в Telegram при помощи бота
+## <img alt="Telegram" height="25" src="media/logo/Telegram.svg" width="25"/></a> Уведомление в Telegram при помощи бота
 ____
 <p align="center">  
 <img title="Allure Overview Dashboard" src="media/screen/telegram_bot.png" width="550">  
@@ -128,5 +128,5 @@ ____
 ## <img alt="Selenoid" height="25" src="media/logo/Selenoid.svg" width="25"/></a> Примеры видео выполнения тестов на Selenoid
 ____
 <p align="center">
-<img title="Selenoid Video" src="media/video/example_video.mp4" width="550" height="350"  alt="video">   
+<img title="Selenoid Video" src="media/video/example.gif" width="550" height="350"  alt="video">   
 </p>
