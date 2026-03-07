@@ -11,7 +11,6 @@
 * <a href="#jira">Интеграция с Jira</a>
 * <a href="#telegram">Уведомление в Telegram при помощи бота</a>
 * <a href="#video">Примеры видео выполнения тестов на Selenoid</a>
-* 
 <a id="description"></a>
 
 ## Описание:
@@ -75,7 +74,7 @@ gradle clean test
 
 ***Удалённый запуск через Jenkins:***
 ```bash  
-clean X5Group_test
+clean test
 -DbrowserName="$BROWSER_NAME"
 -DbrowserVersion="$BROWSER_VERSION"
 -DbrowserSize="BROWSER_SIZE"
