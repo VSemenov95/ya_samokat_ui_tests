@@ -82,7 +82,7 @@ clean test
 ```
 ___
 <a id="allure"></a>
-## <img alt="Allure" height="25" src="media/logo/Allure_Report.svg" width="25"/></a> <a name="Allure"></a>Allure [Allure-отчет](https://jenkins.autotests.cloud/view/java_students/job/VSemenov_qa-scooter_39/allure/)</a>
+## <img alt="Allure" height="25" src="media/logo/Allure_Report.svg" width="25"/></a> <a name="Allure"></a> [Allure-отчет](https://jenkins.autotests.cloud/view/java_students/job/VSemenov_qa-scooter_39/allure/)</a>
 ___
 
 ### *Тест-кейсы*
