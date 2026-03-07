@@ -109,7 +109,7 @@ ____
 
 ___
 <a id="jira"></a>
-## <img alt="Allure" height="25" src="media/logo/jira.svg" width="25"/></a> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1590">Jira</a>
+## <img alt="Jira" height="25" src="media/logo/JiraIcon.svg" width="25"/></a> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1590">Jira</a>
 ____
 <p align="center">  
 <img title="Jira" src="media/screen/Jira_integration.png" width="850">  
