@@ -82,7 +82,7 @@ clean test
 ```
 ___
 <a id="allure"></a>
-## <img alt="Allure" height="25" src="media/screen/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure [Allure-отчет](https://jenkins.autotests.cloud/view/java_students/job/VSemenov_qa-scooter_39/allure/)</a>
+## <img alt="Allure" height="25" src="media/screen/Allure_Report.svg" width="25"/></a> <a name="Allure"></a>Allure [Allure-отчет](https://jenkins.autotests.cloud/view/java_students/job/VSemenov_qa-scooter_39/allure/)</a>
 ___
 
 ### *Тест-кейсы*
@@ -93,7 +93,7 @@ ___
 
 ___
 <a id="allure-testops"></a>
-## <img alt="Allure" height="25" src="media/logo/Allure_Test_Ops.svg" width="25"/></a>Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/5151/dashboards">Allure TestOps</a>
+## <img alt="Allure" height="25" src="media/logo/AllureTestops.svg" width="25"/></a>Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/5151/dashboards">Allure TestOps</a>
 ____
 ### *Allure TestOps Dashboard*
 
