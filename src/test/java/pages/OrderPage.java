@@ -37,8 +37,8 @@ public class OrderPage {
     }
 
     @Step("Проверить текст ошибки под незаполненным полем Имя")
-    public void checkErrorMessageForName() {
-        errorMessageForName.shouldHave(Condition.text("Введите корректное имя"));
+    public void checkErrorMessageForName(String expectedErrorText) {
+        errorMessageForName.shouldHave(Condition.text(expectedErrorText));
     }
 
     @Step("Заполнить поле Фамилия")
@@ -52,8 +52,8 @@ public class OrderPage {
     }
 
     @Step("Проверить текст ошибки под незаполненным полем Фамилия")
-    public void checkErrorMessageForLastName() {
-        errorMessageForLastName.shouldHave(Condition.text("Введите корректную фамилию"));
+    public void checkErrorMessageForLastName(String expectedErrorText) {
+        errorMessageForLastName.shouldHave(Condition.text(expectedErrorText));
     }
 
     @Step("Заполнить поле Адрес")

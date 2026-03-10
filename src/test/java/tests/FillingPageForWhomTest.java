@@ -47,7 +47,7 @@ public class FillingPageForWhomTest extends TestBase{
         orderPage.clickNextButton();
         orderPage.checkTitleForm();
         orderPage.checkVisibleErrorMessageForName();
-        orderPage.checkErrorMessageForName();
+        orderPage.checkErrorMessageForName("Введите корректное имя");
     }
 
     @EnumSource(OrderButton.class)
@@ -63,6 +63,6 @@ public class FillingPageForWhomTest extends TestBase{
         orderPage.clickNextButton();
         orderPage.checkTitleForm();
         orderPage.checkVisibleErrorMessageForLastName();
-        orderPage.checkErrorMessageForLastName();
+        orderPage.checkErrorMessageForLastName("Введите корректную фамилию");
     }
 }
