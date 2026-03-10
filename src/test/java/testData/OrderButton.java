@@ -2,7 +2,7 @@ package testData;
 
 public enum OrderButton {
     TOP("button.Button_Button__ra12g"),
-    MIDDLE("button.Button_Button__ra12g.Button_Middle__1CSJM");
+    MIDDLE("button.Button_Button__ra12g.Button_UltraBig__UU3Lp");
 
     public String getTitle() {
         return title;

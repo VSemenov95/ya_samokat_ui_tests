@@ -1,19 +1,19 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
-import testData.OrderButton;
+import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Selenide.*;
 
 public class MainPage {
-    OrderButton orderButton;
 
+    SelenideElement cookieButtonConfirm = $("button.App_CookieButton__3cvqF");
+
+    @Step("Нажать кнопку Заказать")
     public void openOrdersButton(SelenideElement value) {
         open("");
-        executeJavaScript("""
-document.getElementById('fixedban')?.remove();
-document.querySelector('footer')?.remove();
-""");
+        cookieButtonConfirm.scrollIntoView(true);
+        cookieButtonConfirm.click();
         $(value).scrollIntoView(true);
         value.click();
     }

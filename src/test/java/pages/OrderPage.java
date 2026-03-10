@@ -2,6 +2,7 @@ package pages;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 
 
 import static com.codeborne.selenide.Condition.*;
@@ -20,50 +21,58 @@ public class OrderPage {
             nextButton = $("button.Button_Button__ra12g.Button_Middle__1CSJM"),
             titleForm = $(".Order_Header__BZXOb");
 
-
+    @Step("Проверить заголовок страницы")
     public void checkTitleForm() {
         titleForm.shouldHave(Condition.text("Для кого самокат"));
     }
 
-
-
+    @Step("Заполнить поле Имя")
     public void setFirstName(String value) {
         firstNameInput.setValue(value);
     }
 
+    @Step("Проверить наличие ошибки под незаполненным полем Имя")
     public void checkVisibleErrorMessageForName(){
         errorMessageForName.shouldBe(visible);
     }
 
+    @Step("Проверить текст ошибки под незаполненным полем Имя")
     public void checkErrorMessageForName() {
         errorMessageForName.shouldHave(Condition.text("Введите корректное имя"));
     }
 
+    @Step("Заполнить поле Фамилия")
     public void setLastName(String value) {
         lastNameInput.setValue(value);
     }
 
+    @Step("Проверить наличие ошибки под незаполненным полем Фамилия")
     public void checkVisibleErrorMessageForLastName(){
         errorMessageForLastName.shouldBe(visible);
     }
 
+    @Step("Проверить текст ошибки под незаполненным полем Фамилия")
     public void checkErrorMessageForLastName() {
         errorMessageForLastName.shouldHave(Condition.text("Введите корректную фамилию"));
     }
 
+    @Step("Заполнить поле Адрес")
     public void setAddress(String value) {
         addressInput.setValue(value);
     }
 
+    @Step("Заполнить поле Станция метро")
     public void setMetroStation(String value) {
         metroStationDropDown.setValue(value);
         firstSearchElementMetroStation.click();
     }
 
+    @Step("Заполнить поле Номер телефона")
     public void setPhoneNumber(String value) {
         phoneNumberInput.setValue(value);
     }
 
+    @Step("Нажать кнопку Далее")
     public void clickNextButton() {
         nextButton.click();
     }
