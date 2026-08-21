@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
@@ -9,9 +10,10 @@ import pages.RentPage;
 import testData.FakerTestData;
 import testData.OrderButton;
 
-
 import static com.codeborne.selenide.Selenide.$;
 
+@Owner("VSSemenov")
+@Epic("Разработка страницы Для кого")
 @DisplayName("Проверка заполнения полей страница Для кого")
 public class FillingPageForWhomTest extends TestBase{
     MainPage mainPage = new MainPage();
@@ -19,6 +21,8 @@ public class FillingPageForWhomTest extends TestBase{
     RentPage rentPage = new RentPage();
     FakerTestData testData = new FakerTestData();
 
+    @Story("Добавление полей на страницу")
+    @Severity(SeverityLevel.CRITICAL)
     @EnumSource(OrderButton.class)
     @ParameterizedTest(name = "Проверка успешного заполнения страницы Для кого с переходом через кнопку Заказать = {0}")
     @DisplayName("Успешное заполнение страницы Для кого")
@@ -34,6 +38,8 @@ public class FillingPageForWhomTest extends TestBase{
         rentPage.checkTitleFormRent();
     }
 
+    @Story("Добавление валидаций")
+    @Severity(SeverityLevel.NORMAL)
     @EnumSource(OrderButton.class)
     @ParameterizedTest(name = "Проверка обязательности поля Имя на странице Для кого с переходом через кнопку Заказать = {0}")
     @DisplayName("Неуспешное заполнение страницы Для кого")
@@ -50,6 +56,8 @@ public class FillingPageForWhomTest extends TestBase{
         orderPage.checkErrorMessageForName("Введите корректное имя");
     }
 
+    @Story("Добавление валидаций")
+    @Severity(SeverityLevel.NORMAL)
     @EnumSource(OrderButton.class)
     @ParameterizedTest(name = "Проверка обязательности поля Фамилия на странице Для кого с переходом через кнопку Заказать = {0}")
     @DisplayName("Неуспешное заполнение страницы Для кого")

@@ -9,7 +9,7 @@ public enum MetroStation {
     SOKOLNIKI("Сокольники"),
     KOMSOMOLSKAYA("Комсомольская");
 
-    private String title;
+    private final String title;
 
     MetroStation(String title) {
         this.title = title;
