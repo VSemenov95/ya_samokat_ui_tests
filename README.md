@@ -1,4 +1,4 @@
-# Автоматизированные тесты для тестовой платформы Яндекс Самокат
+# Автоматизированные тесты для тестовой платформы Яндекс.Самокат
 
 ## Содержание
 
@@ -41,9 +41,9 @@
 <a href="https://selenide.org/"><img src="media/logo/Selenide.svg" width="50" height="50"  alt="Selenide"/></a>  
 <a href="https://aerokube.com/selenoid/"><img src="media/logo/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>  
 <a href="ht[images](images)tps://github.com/allure-framework/allure2"><img src="media/logo/Allure_Report.svg" width="50" height="50"  alt="Allure"/></a> 
-<a href="https://qameta.io/"><img src="media/logo/Allure_Test_Ops.svg" width="50" height="50"  alt="Allure TestOps"/></a>   
+<a href="https://qameta.io/"><img src="media/logo/AllureTestops.svg" width="50" height="50"  alt="Allure TestOps"/></a>   
 <a href="https://www.jenkins.io/"><img src="media/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>  
-<a href="https://www.atlassian.com/ru/software/jira/"><img src="media/logo/jira.svg" width="50" height="50"  alt="Jira"/></a>
+<a href="https://www.atlassian.com/ru/software/jira/"><img src="media/logo/JiraIcon.svg" width="50" height="50"  alt="Jira"/></a>
 <a href="https://telegram.org/"><img src="media/logo/Telegram.svg" width="50" height="50"  alt="Telegram"/></a>  
 </p>
 
@@ -93,7 +93,7 @@ ___
 
 ___
 <a id="allure-testops"></a>
-## <img alt="Allure" height="25" src="media/logo/AllureTestops.svg" width="25"/></a>Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/5151/dashboards"> Allure TestOps</a>
+## <img alt="Allure" height="25" src="media/logo/AllureTestops.svg" width="25"/></a> Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/5151/dashboards"> Allure TestOps</a>
 ____
 ### *Allure TestOps Dashboard*
 
@@ -128,5 +128,5 @@ ____
 ## <img alt="Selenoid" height="25" src="media/logo/Selenoid.svg" width="25"/></a> Примеры видео выполнения тестов на Selenoid
 ____
 <p align="center">
-<img title="Selenoid Video" src="media/video/example.gif" width="550" height="350"  alt="video">   
+<img title="Selenoid Video" src="media/video/example.gif" width="500" height="400"  alt="video">   
 </p>
