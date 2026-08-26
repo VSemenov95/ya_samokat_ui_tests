@@ -18,7 +18,7 @@ public class OrderPage {
             metroStationDropDown = $("input.select-search__input[placeholder*='Станция метро']"),
             firstSearchElementMetroStation = $("[data-index='0']"),
             phoneNumberInput = $("input.Input_Input__1iN_Z[placeholder*='Телефон: на него позвонит курьер']"),
-            nextButton = $("button.Button_Button__ra12g.Button_Middle__1CSJM"),
+            nextButton = $x("//button[text()='Далее']"),
             titleForm = $(".Order_Header__BZXOb");
 
     @Step("Проверить заголовок страницы")
