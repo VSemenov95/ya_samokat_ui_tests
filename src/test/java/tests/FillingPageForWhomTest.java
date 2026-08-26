@@ -73,4 +73,78 @@ public class FillingPageForWhomTest extends TestBase{
         orderPage.checkVisibleErrorMessageForLastName();
         orderPage.checkErrorMessageForLastName("Введите корректную фамилию");
     }
+
+    @Story("Добавление валидаций")
+    @Severity(SeverityLevel.NORMAL)
+    @EnumSource(OrderButton.class)
+    @ParameterizedTest(name = "Проверка обязательности поля Станция метро на странице Для кого с переходом через кнопку Заказать = {0}")
+    @DisplayName("Неуспешное заполнение страницы Для кого")
+    public void filingPageWhomWithoutMetroStation(OrderButton orderButton) {
+        mainPage.openOrdersButton($(orderButton.getTitle()));
+        orderPage.checkTitleForm();
+        orderPage.setFirstName(testData.setFirstName());
+        orderPage.setLastName(testData.setLastName());
+        orderPage.setAddress(testData.setAddress());
+        orderPage.setPhoneNumber(testData.setPhoneNumber());
+        orderPage.clickNextButton();
+        orderPage.checkTitleForm();
+        orderPage.checkVisibleErrorMessageForMetroStation();
+        orderPage.checkErrorMessageForMetroStation("Выберите станцию");
+    }
+
+    @Story("Добавление валидаций")
+    @Severity(SeverityLevel.NORMAL)
+    @EnumSource(OrderButton.class)
+    @ParameterizedTest(name = "Проверка обязательности поля Телефон на странице Для кого с переходом через кнопку Заказать = {0}")
+    @DisplayName("Неуспешное заполнение страницы Для кого")
+    public void filingPageWhomWithoutPhone(OrderButton orderButton) {
+        mainPage.openOrdersButton($(orderButton.getTitle()));
+        orderPage.checkTitleForm();
+        orderPage.setFirstName(testData.setFirstName());
+        orderPage.setLastName(testData.setLastName());
+        orderPage.setAddress(testData.setAddress());
+        orderPage.setMetroStation(testData.setMetroStation());
+        orderPage.clickNextButton();
+        orderPage.checkTitleForm();
+        orderPage.checkVisibleErrorMessageForPhone();
+        orderPage.checkErrorMessageForPhone("Введите корректный номер");
+    }
+
+    @Story("Добавление валидаций")
+    @Severity(SeverityLevel.NORMAL)
+    @EnumSource(OrderButton.class)
+    @ParameterizedTest(name = "Проверка ввода латиницы в поле Имя через кнопку Заказать = {0}")
+    @DisplayName("Неуспешное заполнение страницы Для кого")
+    public void characterFirstNameInputValidation(OrderButton orderButton) {
+        mainPage.openOrdersButton($(orderButton.getTitle()));
+        orderPage.checkTitleForm();
+        orderPage.setFirstName(testData.setIncorrectFirstName());
+        orderPage.setLastName(testData.setLastName());
+        orderPage.setAddress(testData.setAddress());
+        orderPage.setMetroStation(testData.setMetroStation());
+        orderPage.setPhoneNumber(testData.setPhoneNumber());
+        orderPage.clickNextButton();
+        orderPage.checkTitleForm();
+        orderPage.checkVisibleErrorMessageForName();
+        orderPage.checkErrorMessageForName("Введите корректное имя");
+    }
+
+    @Story("Добавление валидаций")
+    @Severity(SeverityLevel.NORMAL)
+    @EnumSource(OrderButton.class)
+    @ParameterizedTest(name = "Проверка ввода латиницы в поле Имя через кнопку Заказать = {0}")
+    @DisplayName("Неуспешное заполнение страницы Для кого")
+    public void characterLastNameInputValidation(OrderButton orderButton) {
+        mainPage.openOrdersButton($(orderButton.getTitle()));
+        orderPage.checkTitleForm();
+        orderPage.setFirstName(testData.setFirstName());
+        orderPage.setLastName(testData.setIncorrectLastName());
+        orderPage.setAddress(testData.setAddress());
+        orderPage.setMetroStation(testData.setMetroStation());
+        orderPage.setPhoneNumber(testData.setPhoneNumber());
+        orderPage.clickNextButton();
+        orderPage.checkTitleForm();
+        orderPage.checkVisibleErrorMessageForName();
+        orderPage.checkErrorMessageForName("Введите корректную фамилию");
+    }
 }

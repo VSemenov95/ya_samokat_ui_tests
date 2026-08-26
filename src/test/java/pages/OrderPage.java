@@ -13,6 +13,8 @@ public class OrderPage {
             firstNameInput = $("input.Input_Input__1iN_Z[placeholder*='Имя']"),
             errorMessageForName = $(".Input_ErrorMessage__3HvIb.Input_Visible___syz6"),
             errorMessageForLastName = $(".Input_ErrorMessage__3HvIb.Input_Visible___syz6"),
+            errorMessageForMetroStation = $(".Order_MetroError__1BtZb"),
+            errorMessageForPhone = $(".Input_ErrorMessage__3HvIb.Input_Visible___syz6"),
             lastNameInput = $("input.Input_Input__1iN_Z[placeholder*='Фамилия']"),
             addressInput = $("input.Input_Input__1iN_Z[placeholder*='Адрес: куда привезти заказ']"),
             metroStationDropDown = $("input.select-search__input[placeholder*='Станция метро']"),
@@ -35,6 +37,17 @@ public class OrderPage {
     public void checkVisibleErrorMessageForName(){
         errorMessageForName.shouldBe(visible);
     }
+
+    @Step("Проверить текст ошибки под незаполненным полем Станция метро")
+    public void checkErrorMessageForMetroStation(String expectedErrorText) {
+        errorMessageForMetroStation.shouldHave(Condition.text(expectedErrorText));
+    }
+
+    @Step("Проверить наличие ошибки под незаполненным полем Станция метро")
+    public void checkVisibleErrorMessageForMetroStation(){
+        errorMessageForMetroStation.shouldBe(visible);
+    }
+
 
     @Step("Проверить текст ошибки под незаполненным полем Имя")
     public void checkErrorMessageForName(String expectedErrorText) {
@@ -75,6 +88,16 @@ public class OrderPage {
     @Step("Нажать кнопку Далее")
     public void clickNextButton() {
         nextButton.click();
+    }
+
+    @Step("Проверить наличие ошибки под незаполненным полем Телефон")
+    public void checkVisibleErrorMessageForPhone(){
+        errorMessageForPhone.shouldBe(visible);
+    }
+
+    @Step("Проверить текст ошибки под незаполненным полем Телефон")
+    public void checkErrorMessageForPhone(String expectedErrorText) {
+        errorMessageForPhone.shouldHave(Condition.text(expectedErrorText));
     }
 
 }

@@ -18,6 +18,15 @@ public class FakerTestData {
         return faker.name().lastName();
     }
 
+    public String setIncorrectFirstName() {
+        Faker fakerEn = new Faker(new Locale("en"));
+        return fakerEn.name().firstName();
+    }
+
+    public String setIncorrectLastName() {
+        Faker fakerEn = new Faker(new Locale("en"));
+        return fakerEn.name().lastName();
+    }
     public String setAddress() {
         return faker.address().streetAddress();
     }
