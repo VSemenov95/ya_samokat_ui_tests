@@ -2,10 +2,7 @@ package testData;
 
 import com.github.javafaker.Faker;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Locale;
-import java.util.concurrent.TimeUnit;
 
 public class FakerTestData {
     Faker faker = new Faker(new Locale("ru"));
@@ -37,22 +34,5 @@ public class FakerTestData {
 
     public String setMetroStation() {
         return MetroStation.getRandomMetroStation();
-    }
-
-    public String setDateRate() {
-        Date randomDate = faker.date().future(365, TimeUnit.DAYS);
-        return new SimpleDateFormat("dd.MM.yyyy").format(randomDate);
-    }
-
-    public String setTimeRate() {
-        return faker.options().option("сутки", "двое суток", "трое суток", "четверо суток", "пятеро суток", "шестеро суток", "семеро суток");
-    }
-
-    public String setColor() {
-        return faker.options().option("чёрный жемчуг", "серая безысходность");
-    }
-
-    public String setComment() {
-        return faker.lorem().sentence(10);
     }
 }
