@@ -22,7 +22,7 @@ public abstract class TestBase {
 
     @BeforeAll
     public static void preCondition() {
-                Configuration.remote = System.getProperty("https://qa_engineer:-aAb_-4gs53FD@selenoid.qa.guru/wd/hub");
+        Configuration.remote = System.getProperty("https://qa_engineer:-aAb_-4gs53FD@selenoid.qa.guru/wd/hub");
         Configuration.browser = System.getProperty("browser", "chrome").toLowerCase();
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.browserVersion = System.getProperty("browserVersion", "149");
