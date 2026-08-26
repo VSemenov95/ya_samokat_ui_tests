@@ -22,7 +22,7 @@ public abstract class TestBase {
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.browserVersion = System.getProperty("browserVersion", "127");
-        Configuration.remote = System.getProperty("https://user1:1234@selenoid.autotests.cloud/wd/hub");
+        Configuration.remote = System.getProperty("https://qa_engineer:-aAb_-4gs53FD@selenoid.qa.guru/wd/hub");
         Configuration.baseUrl = System.getProperty("baseUrl", "https://qa-scooter.praktikum-services.ru/");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of("enableVNC", true, "enableVideo", true));
