@@ -50,10 +50,10 @@
 
 ____
 <a id="jenkins"></a>
-## <img alt="Jenkins" height="25" src="media/logo/Jenkins.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.qa.guru/job/VSemenov_qa-scooter_39/)</a>
+## <img alt="Jenkins" height="25" src="media/logo/Jenkins.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.qa.guru/job/VSemenov_diplov_ya_praktikum/)</a>
 ____
 <p align="center">  
-<a href="https://jenkins.autotests.cloud/view/java_students/job/VSemenov_qa-scooter_39/"><img src="media/screen/jenkins.png" alt="Jenkins" width="950"/></a>  
+<a href="https://jenkins.qa.guru/job/VSemenov_diplov_ya_praktikum/"><img src="media/screen/jenkins.png" alt="Jenkins" width="950"/></a>  
 </p>
 
 
@@ -77,12 +77,12 @@ gradle clean test
 clean test
 -DbrowserName="$BROWSER_NAME"
 -DbrowserVersion="$BROWSER_VERSION"
--DbrowserSize="BROWSER_SIZE"
--DremoteUrl=https://user1:1234@selenoid.autotests.cloud/wd/hub
+-DbrowserSize="$BROWSER_SIZE"
+-DremoteUrl=https://qa_engineer:-aAb_-4gs53FD@selenoid.qa.guru/wd/hub
 ```
 ___
 <a id="allure"></a>
-## <img alt="Allure" height="25" src="media/logo/Allure_Report.svg" width="25"/></a> <a name="Allure"></a> [Allure-отчет](https://jenkins.autotests.cloud/view/java_students/job/VSemenov_qa-scooter_39/allure/)</a>
+## <img alt="Allure" height="25" src="media/logo/Allure_Report.svg" width="25"/></a> <a name="Allure"></a> [Allure-отчет](https://jenkins.qa.guru/job/VSemenov_diplov_ya_praktikum/6/allure/)</a>
 ___
 
 ### *Тест-кейсы*
@@ -93,7 +93,7 @@ ___
 
 ___
 <a id="allure-testops"></a>
-## <img alt="Allure" height="25" src="media/logo/AllureTestops.svg" width="25"/></a> Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/5151/dashboards"> Allure TestOps</a>
+## <img alt="Allure" height="25" src="media/logo/AllureTestops.svg" width="25"/></a> Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/5368/dashboards"> Allure TestOps</a>
 ____
 ### *Allure TestOps Dashboard*
 
